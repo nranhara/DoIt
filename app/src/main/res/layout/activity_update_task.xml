@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTaskActivity"
+    >
+
+    <TextView
+        android:id="@+id/editTaskHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Update Task"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:layout_marginLeft="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/UpdateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editTaskHead"
+        android:layout_marginEnd="36dp"
+        />
+
+    <EditText
+        android:id="@+id/UpdateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/editTaskHead"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/UpdateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:hint="Enter the description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/UpdateTitleEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+
+
+        />
+
+
+
+</RelativeLayout>
